@@ -129,7 +129,7 @@ class TDA(object):
         # 箱内聚类
         clusters = []
         for bin in bins.values():
-            print(len(bin))
+            print(len(bin))   #### 如果你想去掉打印的那些数字，就注释掉这行
             clusters.extend(self._cluster(bin))
         # cluster数量过滤
         clusters = [c for c in clusters if len(c) > mincluster]
